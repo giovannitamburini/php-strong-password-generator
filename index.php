@@ -16,27 +16,9 @@ Milestone 3 (BONUS)
 Invece di visualizzare la password nella index, effettuare un redirect ad una pagina dedicata che tramite $_SESSION recupererà la password da mostrare all’utente.
 */
 
+include './partials/functions.php';
+
 $lengthPassword = '';
-
-// funzione
-
-function showChoice($length)
-{
-    echo "la lunghezza scelta è {$length}";
-}
-;
-
-function passwordGenerator($length)
-{
-    $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!£$%&?^@#°:-_';
-
-    $password = substr(str_shuffle($characters), 0, $length);
-
-    echo "Password generata: {$password}";
-
-    return $password;
-}
-;
 
 ?>
 
