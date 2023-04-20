@@ -16,7 +16,7 @@ Milestone 3 (BONUS)
 Invece di visualizzare la password nella index, effettuare un redirect ad una pagina dedicata che tramite $_SESSION recupererà la password da mostrare all’utente.
 */
 
-include './partials/functions.php';
+include __DIR__ . '/./partials/functions.php';
 
 $lengthPassword = '';
 
@@ -43,8 +43,8 @@ $lengthPassword = '';
     <form action="index.php" method="GET" class="p-2">
 
         <div class="pb-2">
-            <label for="">scegli una lunghezza della password</label>
-            <input name="range" type="number" min="4" max="15" step="1" required>
+            <label for="range">scegli una lunghezza della password</label>
+            <input name="range" id="range" type="number" min="4" max="15" step="1" required>
         </div>
 
         <button type="submit" class="btn btn-primary">Genera</button>
